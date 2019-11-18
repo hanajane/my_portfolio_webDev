@@ -674,12 +674,28 @@ video {
     float: left;
     height: auto;
 }
+.navbar-brand_small {
+    float: none;
+	margin: 30px 0 0 0;
+    float: left;
+    height: auto;
+}
 .navbar-brand a {
     -webkit-transition: none;
     -o-transition: none;
     -moz-transition: none;
 }
+.navbar-brand_small a {
+    -webkit-transition: none;
+    -o-transition: none;
+    -moz-transition: none;
+}
 .navbar-brand {
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+.navbar-brand_small {
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
@@ -3085,7 +3101,7 @@ textarea {
 }
 .card::after {
         border:1px solid #9cbc68;
-        
+
 }
 .container table thead .rates_header {
     text-align: left;
@@ -3146,9 +3162,16 @@ table .table_body {
 	    overflow-x: visible
 	}
 	.navbar-brand {
+        /* display: none; */
 	    float: none;
 	    margin: 30px 0 70px 0;
-	}
+    }
+    	.navbar-brand_small {
+        display: none;
+	    float: none;
+	    margin: 30px 0 70px 0;
+    }
+    
 	.navbar {
 	    width: 80px;
 	    max-width: 80px;
@@ -3176,12 +3199,21 @@ table .table_body {
 	    padding: 0 40px
 	}
 	.navbar-brand {
+        display: none;
 	    position: relative;
 	    -webkit-box-shadow: none;
 	    -moz-box-shadow: none;
 	    box-shadow: none;
 	    margin: 24px 0;
-	}
+    }
+    	/* .navbar-brand_small {
+        display: none;
+	    position: relative;
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+	    margin: 24px 0;
+	} */
 	.navbar {
 	    min-height: inherit;
 	    width: 100%;
